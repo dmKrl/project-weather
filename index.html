@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Прогноз погоды</title>
+</head>
+<body>
+    <!-- Хедер -->
+    <header class="header">
+        <!-- Левая часть с лого -->
+        <div class="header__logo">
+            <a class="header__link" href="#">
+                <img src="./pict/sun/6.png" alt="sun" class="header__link-img">
+            </a>
+            <h1 class="header__tittle">Прогноз погоды</h1>
+        </div>
+        
+        <!-- Правая часть с инпутом -->
+        <form class="header__form">
+                <input type="text" class="header__input" placeholder="Введите название города">
+                <button class="header__btn">
+                    <img src="./pict/search.svg" alt="search" class="header__btn-img">
+                </button> 
+        </form>
+    </header>
+    <!-- Карточки прогноза погоды -->
+    <main class="main">
+        <section class="card">
+            <!-- Левый блок -->
+            <div class="card__city">
+                <div class="card__wether">
+                    <h2 class="card__wether-heading">Владивосток</h2>
+                    <p class="card__wether-num">10°с</p>
+                    <p class="card__wether-text">облачно 20° 12°</p>
+                </div>
+                <img src="./pict/sun/27.png" alt="sun with cloud" class="card__city-cloud">
+            </div>
+            <div class="card__right">
+                <!-- Правый верхний -->
+                <div class="card__index">
+                    <img src="./pict/leaf 1.svg" alt="leaf" class="card__leaf"><p class="card__text-main">Индекс качества воздуха</p>
+                    <p class="card__text-up">Хороший</p>
+                    <p class="card__text-main">45</p>
+                    <div class="card__box-text">
+                        <p class="card__text-up">
+                            38.9
+                            <p class="card__text-down">PM2.5</p>
+                        </p>
+                        <p class="card__text-up">
+                            32.9
+                            <p class="card__text-down">PM10</p>
+                        </p>
+                        <p class="card__text-up">
+                            4.0
+                            <p class="card__text-down">SO2</p>
+                        </p>
+                        <p class="card__text-up">
+                            5.0
+                            <p class="card__text-down">NO2</p>
+                        </p>
+                        <p class="card__text-up">
+                            45.1
+                            <p class="card__text-down">O3</p>
+                        </p>
+                        <p class="card__text-up">
+                            0.8
+                            <p class="card__text-down">CO</p>
+                        </p>
+                    </div>
+                </div>
+                <!-- Правый нижний -->
+                <div class="card__week">
+                    <div>
+                        <p></p>
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                    <div>
+                        <p></p>
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                    <div>
+                        <p></p>
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                    <div>
+                        <p></p>
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                    <div>
+                        <p></p>
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
