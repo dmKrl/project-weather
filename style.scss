@@ -109,7 +109,7 @@ input {
         width: 690px;
         height: 620px;
         background: linear-gradient(322.33deg, #005AA7 11.6%, #FFFDE4 121.52%), #D9D9D9;
-        box-shadow: 0px 5px 50px rgba(67, 127, 157, 0.46);
+        box-shadow: 0px 50px 50px rgba(67, 127, 157, 0.46);
         border-radius: 20px;
 
         &-cloud {
@@ -132,6 +132,19 @@ input {
         font-size: 58px;
         line-height: 69px;
         color: #FFFFFF;
+    }
+    &__heading span {
+        display: inline-block;
+        vertical-align: text-top;
+
+        padding: 3px 5px;
+        background-color: #2c8de3;
+        border-radius: 6px;
+
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 1;
     }
 
     &__num {
