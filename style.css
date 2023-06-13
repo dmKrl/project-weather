@@ -1,6 +1,11 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(0deg, #005AA7, #005AA7), #FFFFFF;
 }
 
 input {
@@ -8,7 +13,6 @@ input {
 }
 
 .header {
-  background: linear-gradient(0deg, #005AA7, #005AA7), #FFFFFF;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -62,7 +66,6 @@ input {
 }
 
 .main {
-  background: linear-gradient(133.3deg, #005AA7 37.42%, #FFFDE4 122.99%), #FFFFFF;
   height: 910px;
 }
 
@@ -73,12 +76,6 @@ input {
   padding-left: 130px;
   padding-right: 130px;
   gap: 20px;
-}
-.card__right {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  max-width: 690px;
 }
 .card__city {
   display: flex;
@@ -94,7 +91,13 @@ input {
   max-width: 230px;
   max-height: 191px;
 }
-.card__wether-heading {
+.card__weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__heading {
+  margin-left: 40px;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
@@ -102,7 +105,9 @@ input {
   line-height: 69px;
   color: #FFFFFF;
 }
-.card__wether-num {
+.card__num {
+  margin-top: 55px;
+  margin-bottom: 55px;
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
@@ -110,7 +115,7 @@ input {
   line-height: 138px;
   color: #FFFFFF;
 }
-.card__wether-text {
+.card__text {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
@@ -118,17 +123,78 @@ input {
   line-height: 43px;
   color: #FFFFFF;
 }
+.card__text-main {
+  margin-top: 12px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+.card__text-up {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #76FF73;
+}
+.card__text-good {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: #76FF73;
+}
+.card__text-down {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #B5B5B5;
+}
+.card__right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 690px;
+}
 .card__index {
   display: flex;
+  flex-direction: column;
   width: 690px;
   height: 300px;
   background: linear-gradient(344.14deg, #005AA7 4.82%, #FFFDE4 139.59%), #D9D9D9;
   box-shadow: 0px 5px 50px 10px rgba(67, 127, 157, 0.46);
   border-radius: 20px;
 }
+.card__box-air {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__place-img {
+  display: flex;
+  align-items: center;
+}
 .card__leaf {
-  width: 42.62px;
+  width: 35px;
   height: 40px;
+}
+.card__box-text {
+  display: flex;
+  flex-direction: column;
+}
+.card__number {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 .card__week {
   width: 690px;
