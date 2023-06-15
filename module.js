@@ -115,41 +115,27 @@ async function getWeather(city) {
     
     // Адрес запроса
     const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
+    const urlWeek = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7`;
+
     const response = await fetch(url);
+    const responseWeek = await fetch(urlWeek);
+
     const data = await response.json();
+    const dataWeek = await responseWeek.json();
+
 
     console.log(data)
+    console.log(dataWeek)
     return data;
 }
 
 export { showCard, showError, removePrevCard, getWeather};
 
 
-// http://api.weatherapi.com/v1/current.json?key=722f109f88a14ced88e132829231306&q=London
-
-// Получение погоды на 7 дней 
-// http://api.weatherapi.com/v1/forecast.j
-// Прогноз погоды на 7 дней
-// form.onsubmit = function (event) {
-//     event.preventDefault();
-
-//     let city = input.value.trim();
-
-//     const url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7`;
-
-//     fetch(url) 
-//         .then((response) => {
-//             return response.json();
-//         })
-//         .then((data) => {
-//             console.log(data);
-        
-// })
-// }
-
 // // Тест в консоли вывода данных api
 // function fetchAsk() {
-//     fetch(query).then((response) => {
+//     fetch(query)
+//       .then((response) => {
 //         return response.json();
 //     }).then((data) => {
 //         console.log(data);
