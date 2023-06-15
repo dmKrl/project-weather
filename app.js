@@ -93,33 +93,37 @@ header.insertAdjacentHTML('afterend', html);
 
 // Функция удаления карточки
 function removePrevCard() {
-const prevCard = document.querySelector('.main');
-if (prevCard) {
-prevCard.remove();
-}
+    const prevCard = document.querySelector('.main');
+
+    if (prevCard) {
+        prevCard.remove();
+    }
 }
 
 // Функция отображения карточки с ошибкой
 function showError(errorMessage) {
-const html = `      
-<main class="main">
-<section class="card">
-    <div class="card__city">
-        <div class="card__weather">
-            <h2 class="card__heading">${errorMessage}</h2>
-        </div>
-    </div>
-</section>
-</main>`;
-header.insertAdjacentHTML('afterend', html);
+    const html = `      
+        <main class="main">
+        <section class="card">
+            <div class="card__city">
+                <div class="card__weather">
+                    <h2 class="card__heading">${errorMessage}</h2>
+                </div>
+            </div>
+        </section>
+        </main>`;
+
+    header.insertAdjacentHTML('afterend', html);
 }
 
 // Асинхронная функция получения данных с API 
 async function getWeather(city) {
+    
     // Адрес запроса
     const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
     const response = await fetch(url);
     const data = await response.json();
+
     console.log(data)
     return data;
 }
