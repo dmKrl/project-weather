@@ -208,9 +208,39 @@ input {
   margin-bottom: 12px;
 }
 .card__week {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 690px;
   height: 300px;
   background: linear-gradient(345.48deg, #005AA7 18.55%, #FFFDE4 144.76%), #D9D9D9;
   box-shadow: 0px 5px 50px 10px rgba(67, 127, 157, 0.46);
   border-radius: 20px;
+}
+.card__chapter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.card__day {
+  padding-bottom: 20px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.card__day-icon {
+  width: 83.61px;
+  height: 86px;
+}
+.card__temp {
+  padding-top: 24px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

@@ -49,33 +49,38 @@ function showCard( {name, country, temp_c, condition} ) {
              
              <!-- Правый нижний -->
              <div class="card__week">
-                 <div>
-                     <p></p>
-                     <img src="" alt="">
-                     <p></p>
-                 </div>
-                 <div>
-                     <p></p>
-                     <img src="" alt="">
-                     <p></p>
-                 </div>
-                 <div>
-                     <p></p>
-                     <img src="" alt="">
-                     <p></p>
-                 </div>
-                 <div>
-                     <p></p>
-                     <img src="" alt="">
-                     <p></p>
-                 </div>
-                 <div>
-                     <p></p>
-                     <img src="" alt="">
-                     <p></p>
-                 </div>
+             <div class="card__chapter">
+                 <p class="card__day">пн</p>
+                 <img src="./pict/cloud/7.png" alt="" class="card__day-icon">
+                 <p class="card__temp">20° 12°</p>
+             </div>
+             <div class="card__chapter">
+                 <p class="card__day">вт</p>
+                 <img src="./pict/cloud/22.png" alt="" class="card__day-icon">
+                 <p class="card__temp">20° 12°</p>
+             </div>
+             <div class="card__chapter">
+                 <p class="card__day">ср</p>
+                 <img src="./pict/cloud/23.png" alt="" class="card__day-icon">
+                 <p class="card__temp">20° 12°</p>
+             </div>
+             <div class="card__chapter">
+                 <p class="card__day">чт</p>
+                 <img src="./pict/rain/39.png" alt="" class="card__day-icon">
+                 <p class="card__temp">20° 12°</p>
+             </div>
+             <div class="card__chapter">
+                 <p class="card__day">пт</p>
+                 <img src="./pict/cloud/29.png" alt="" class="card__day-icon">
+                 <p class="card__temp">20° 12°</p>
+             </div>
+             <div class="card__chapter">
+                 <p class="card__day">сб</p>
+                 <img src="./pict/sun/27.png" alt="" class="card__day-icon">
+                 <p class="card__temp">20° 12°</p>
              </div>
          </div>
+     </div>
 
      </section>
  </main> `;
