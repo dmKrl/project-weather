@@ -39,6 +39,7 @@ form.onsubmit = async function (event) {
         // По номеру кода выбираем русский язык 
         console.log(data.current.condition.code);
         const infoLang = conditions.find((element) => element.code === data.current.condition.code);
+        console.log(infoLang)
 
         // Реализация своих иконок
         const filePath = './pict/' + (data.current.is_day ? 'day' : 'night') + '/';
