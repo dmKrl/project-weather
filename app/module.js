@@ -13,7 +13,7 @@ function showCard( {name, country, temp_c, condition} ) {
             <div class="card__weather">
                 <h2 class="card__heading">${name}<span>${country}</span></h2>
                 <p class="card__num">${temp_c}<sup>°с</sup></p>
-                <p class="card__text">${condition} 20° 12°</p>
+                <p class="card__text">${condition} ${temp_c}° 12°</p>
             </div>
             <img src="./pict/sun/27.png" alt="sun with cloud" class="card__city-cloud">
          </div>
