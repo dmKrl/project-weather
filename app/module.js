@@ -3,7 +3,7 @@ const header = document.querySelector('.header');
 
 //Отображаем полученные данные в карточке
 //Разметка для карточки 
-function showCard( {name, country, temp_c, condition} ) {
+function showCard( {name, country, temp_c, condition, imgPath} ) {
 
     const html = `
     <main class="main">
@@ -15,7 +15,7 @@ function showCard( {name, country, temp_c, condition} ) {
                 <p class="card__num">${temp_c}<sup>°с</sup></p>
                 <p class="card__text">${condition} ${temp_c}° 12°</p>
             </div>
-            <img src="./pict/sun/27.png" alt="sun with cloud" class="card__city-cloud">
+            <img src=${imgPath} alt="sun or cloud" class="card__city-cloud">
          </div>
          <!-- Правый верхний -->
          <div class="card__right">

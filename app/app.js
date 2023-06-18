@@ -40,17 +40,25 @@ form.onsubmit = async function (event) {
         console.log(data.current.condition.code);
         const infoLang = conditions.find((element) => element.code === data.current.condition.code);
 
-        const conditionDayOrNight = data.current.is_day
-            ? infoLang.languages[23]['day_text']
-            : infoLang.languages[23]['night_text'];
+        // Реализация своих иконок
+        const filePath = './pict/' + (data.current.is_day ? 'day' : 'night') + '/';
+        const fileName = (data.current.is_day ? infoLang.day : infoLang.night) + '.png';
+        const imgPath = filePath + fileName;
+        console.log('filePath', filePath + fileName);
+        console.log(fileName)
 
+
+ 
         //Отображаем полученные данные в карточке
         //Разметка для карточки 
         const weatherData = {
             name: data.location.name,
             country: data.location.country,
             temp_c: data.current.temp_c,
-            condition: conditionDayOrNight,
+            condition: data.current.is_day
+            ? infoLang.languages[23]['day_text']
+            : infoLang.languages[23]['night_text'],
+            imgPath,
         }
 
         showCard(weatherData);
