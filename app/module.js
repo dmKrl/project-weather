@@ -1,4 +1,4 @@
-const apiKey = '722f109f88a14ced88e132829231306'
+const apiKey = 'de4f896238c74d8694d125052231607'
 const header = document.querySelector('.header');
 
 //Отображаем полученные данные в карточке
